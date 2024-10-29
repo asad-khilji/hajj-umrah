@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hajj & Umrah</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776; <!-- Hamburger Icon -->
+            </div>
+            <ul id="nav-links" class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Hajj & Umrah</a></li>
+                <li><a href="#steps">Steps</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Hajj & Umrah</h2>
+        <p>Learn more about the beautiful journeys of Hajj and Umrah. Understand the steps, preparations, and spiritual significance of these pilgrimages.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Hajj & Umrah</h2>
+        <p>Hajj is one of the Five Pillars of Islam and is mandatory for every able Muslim to perform at least once in their lifetime. Umrah is a voluntary pilgrimage, performed throughout the year.</p>
+    </section>
+
+    <section id="steps">
+        <h2>Steps of Hajj & Umrah</h2>
+        <ol>
+            <li>Ihram - Enter the state of spiritual purity.</li>
+            <li>Tawaf - Circumambulate the Kaaba seven times.</li>
+            <li>Sai - Walk between the hills of Safa and Marwah.</li>
+            <li>Arafat - Stand at the plain of Arafat for prayer and reflection.</li>
+            <li>Muzdalifah - Collect pebbles for the stoning of the pillars.</li>
+            <li>Rami - Stone the pillars representing Satan.</li>
+            <li>Tawaf al-Ifadah - Another circumambulation of the Kaaba.</li>
+        </ol>
+    </section>
+
+    <!-- Media Section -->
+    <section id="media">
+        <div class="media-container">
+            <div class="media-item">
+                <img src="hajj-image.jpg" alt="Hajj Image" class="media-img">
+            </div>
+            <div class="media-item">
+                <video controls class="media-video">
+                    <source src="umrah-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Watch this video to learn more.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="submit.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Hajj & Umrah Guide</p>
+    </footer>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>
